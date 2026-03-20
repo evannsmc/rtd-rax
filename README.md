@@ -5,7 +5,7 @@
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-blue)](https://www.docker.com/)
 [![evannsmc.com](https://img.shields.io/badge/evannsmc.com-Project%20Portfolio-blue)](https://www.evannsmc.com)
 
-Official Documentation Website for this project [is found here](https://evannsm.github.io/ws_RTD)
+Official Documentation Website for this project [is found here](https://evannsm.github.io/ws_RTD).
 
 **`RTD-RAX`** is a runtime-assurance extension of Reachability-based Trajectory Design (RTD) that replaces conservative offline reachable sets with fast online safety certification via mixed-monotone reachability ([immrax](https://github.com/gtfactslab/immrax)).
 
