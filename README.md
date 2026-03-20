@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-blue)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-blue)](https://www.docker.com/)
-[![evannsmc.com](https://img.shields.io/badge/evannsmc.com-Project%20Page-blue)](https://www.evannsmc.com)
+[![evannsmc.com](https://img.shields.io/badge/evannsmc.com-Project%20Portfolio-blue)](https://www.evannsmc.com)
 
 **RTD-RAX** is a Python implementation of Reachability-based Trajectory Design (RTD) augmented with formal reachability verification via [immrax](https://github.com/gtfactslab/immrax).
 
