@@ -596,7 +596,7 @@ def _world_legend_items(ax, legend_variant='default'):
 
     if legend_variant == 'compact_rax':
         ordered_entries = [
-            ('obstacle', 'Obstacle'),
+            ('obstacle', 'True Obstacle'),
             ('buffered obstacle', 'Buffered Obstacle'),
             ('obs pts', 'Obstacle Discretization'),
             ('goal', 'Goal'),
@@ -747,7 +747,7 @@ def _make_compact_full_gap_figure(
         ])
         ax.contourf(
             k2g, k1g, violated.reshape(k2g.shape),
-            levels=[0.5, 1.5], colors=[[1.0, 0.5, 0.6]], alpha=0.7,
+            levels=[0.5, 1.5], colors=[[0.75, 0.0, 0.0]], alpha=0.75,
         )
 
     if k_opt is not None:
@@ -801,6 +801,19 @@ def _make_compact_full_gap_figure(
         ax_world.yaxis.set_label_coords(-0.115, 0.5)
 
     legend_handles, legend_labels = _world_legend_items(ax_world, legend_variant='compact_rax')
+
+    # Add k-space legend entries
+    unsafe_patch = mpatches.Patch(facecolor=[0.75, 0.0, 0.0], alpha=0.75,
+                                  label='Unsafe k')
+    legend_handles.insert(0, unsafe_patch)
+    legend_labels.insert(0, 'Unsafe k')
+    if k_opt is not None:
+        kopt_handle = Line2D([], [], linestyle='None', marker='o',
+                             color=[0.3, 0.8, 0.5], markersize=7,
+                             label=r'Optimal $k^*$')
+        legend_handles.insert(1, kopt_handle)
+        legend_labels.insert(1, r'Optimal $k^*$')
+
     if layout == 'horizontal' and legend_placement == 'bottom':
         filtered = [
             (handle, label)
@@ -1130,7 +1143,7 @@ def _plot_world(ax, agent,
     ax.set_xlim(x_lo, x_hi)
     ax.set_ylim(-y_extent, y_extent)
 
-    obs_color     = [0.75, 0.25, 0.25]
+    obs_color     = [0.82, 0.35, 0.35]
     buf_color     = [1.0,  0.55, 0.55]
     pts_color     = [0.4,  0.05, 0.05]
 
