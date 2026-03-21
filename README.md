@@ -60,6 +60,11 @@ All `make` targets are run from the `docker/` directory.
 
 Two rectangular obstacles leave a narrow 0.619 m gap. Standard RTD is too conservative to pass; RTD-RAX uses the noerror FRS plus immrax verification to certify a safe path through.
 
+<figure>
+<img src="assets/gap_noerror_verify.png" alt="Narrow gap scenario" width="100%">
+<figcaption>Narrow gap scenario. Left: feasible parameter space <i>k</i> (safe: white, unsafe: red) with selected trajectory <i>k</i><sup>*</sup> in green. Right: certifiably safe trajectory through the gap.</figcaption>
+</figure>
+
 ```bash
 make manuscript-case1-gap-suite
 ```
