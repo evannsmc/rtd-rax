@@ -16,10 +16,10 @@ The arXiv preprint of the **`RTD-RAX`** paper [may be found here](https://arxiv.
   <table>
     <tr>
       <td align="center">
-        <img src="assets/gap_noerror_verify.png" height="250"><br>
+        <img src="assets/gap_noerror_verify.png" height="260"><br>
       </td>
       <td align="center">
-        <img src="assets/angled_repair_view_two_repairs.gif" height="290"><br>
+        <img src="assets/angled_repair_view_two_repairs.gif" height="320"><br>
       </td>
     </tr>
   </table>
