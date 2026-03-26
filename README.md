@@ -11,14 +11,10 @@ The arXiv preprint of the **`RTD-RAX`** paper [may be found here](https://arxiv.
 
 **`RTD-RAX`** is a runtime-assurance extension of Reachability-based Trajectory Design (RTD) that replaces conservative offline reachable sets with fast online safety certification via mixed-monotone reachability ([immrax](https://github.com/gtfactslab/immrax)).
 
-<div align="center">
-  <figure>
-    <img src="assets/gap_noerror_verify.png" alt="Narrow gap scenario" width="50%">
-    <figcaption>
-      Narrow gap scenario. Left: feasible parameter space <i>k</i> (safe: white, unsafe: red) with selected trajectory <i>k</i><sup>*</sup> in green. Right: certifiably safe trajectory through the gap.
-    </figcaption>
-  </figure>
-</div>
+<p align="center">
+  <img src="assets/gap_noerror_verify.png" width="50%" alt="Narrow gap scenario"><br>
+  <em>Narrow gap scenario. Left: feasible parameter space <i>k</i> (safe: white, unsafe: red) with selected trajectory <i>k</i><sup>*</sup> in green. Right: certifiably safe trajectory through the gap.</em>
+</p>
 
 RTD is a provably safe, real-time motion planning framework that precomputes Forward Reachable Sets (FRS) offline and uses them online to optimize for collision-free trajectories. The catch: because high-fidelity models are too expensive for reachable-set computation, RTD uses simplified models and inflates the FRS with worst-case tracking-error bounds. This makes the planner overly conservative — it rejects safe trajectories, triggers unnecessary braking, and cannot handle disturbances (wind, ice, slippage) that weren't anticipated offline.
 
