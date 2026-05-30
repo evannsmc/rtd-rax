@@ -5,7 +5,7 @@
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-blue)](https://www.docker.com/)
 [![evannsmc.com](https://img.shields.io/badge/evannsmc.com-Project%20Portfolio-blue)](https://www.evannsmc.com)
 
-Official Documentation Website for this project [is found here](https://evannsm.github.io/ws_RTD).
+Official Documentation Website for this project [is found here](https://evannsmc.github.io/ws_RTD).
 
 The arXiv preprint of the **`RTD-RAX`** paper [may be found here](https://arxiv.org/abs/2603.21635).
 
@@ -57,7 +57,7 @@ All case studies run inside a Docker container with pre-installed dependencies (
 ### Option A: Pre-built Image (Fastest)
 
 ```bash
-git clone https://github.com/evannsm/rtd-rax.git && cd rtd-rax/docker
+git clone https://github.com/evannsmc/rtd-rax.git && cd rtd-rax/docker
 make pull             # pulls evannsmc/rtd-rax:latest from DockerHub
 make run_gui          # starts container with X11 forwarding for plots
 ```
@@ -65,7 +65,7 @@ make run_gui          # starts container with X11 forwarding for plots
 ### Option B: Build from Source
 
 ```bash
-git clone https://github.com/evannsm/rtd-rax.git && cd rtd-rax/docker
+git clone https://github.com/evannsmc/rtd-rax.git && cd rtd-rax/docker
 make build
 make run_gui          # starts container with X11 forwarding for plots
 ```
